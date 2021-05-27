@@ -1,0 +1,103 @@
+:root {
+  /* color */
+  --color-background: #3f454d;
+  --color-white: #ffffff;
+  --color-blue: #3b88c3;
+  --color-yellow: #fbbe28;
+  --color-pink: #fd7f84;
+
+  /* size */
+  --image-size: 50px;
+  --base-line: 12px;
+}
+
+body {
+  background-color: var(--color-background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.logo {
+  margin-top: 5vh;
+  margin-bottom: 3vh;
+}
+
+.buttons {
+  width: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons button {
+  margin-right: var(--base-line);
+}
+
+.buttons .type img {
+  width: var(--image-size);
+  height: var(--image-size);
+}
+
+.buttons .color {
+  width: calc(var(--image-size) * 1.5);
+  height: var(--image-size);
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.buttons .blueBtn {
+  background-color: var(--color-blue);
+}
+
+.buttons .yellowBtn {
+  background-color: var(--color-yellow);
+}
+
+.buttons .pinkBtn {
+  background-color: var(--color-pink);
+}
+
+.display {
+  margin-top: 3vh;
+}
+
+.displaybox {
+  width: 40vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 10vh;
+  border-radius: 8px;
+}
+
+.displaybox li {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: var(--base-line);
+  border-radius: 8px;
+  padding: var(--base-line) 0;
+  background-color: white;
+}
+
+.displaybox li img {
+  width: var(--image-size);
+  height: var(--image-size);
+  margin-right: calc(var(--base-line) * 2);
+  margin-left: calc(var(--base-line) * 2);
+}
+
+.displaybox li span {
+  font-weight: bold;
+}
